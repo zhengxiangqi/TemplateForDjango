@@ -1,0 +1,15 @@
+.idea/
+.DS_Store
+*/**/.DS_Store
+*.sublime-project
+*.sublime-workspace
+*/**/*.sublime-project
+*/**/*.sublime-workspace
+.vscode/
+uwsgi/*.log
+uwsgi/*.pid
+uwsgi/*.status
+*/**/migrations
+*/**/*.pyc
+*/**/__pycache__
+static/

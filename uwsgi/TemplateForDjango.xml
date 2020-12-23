@@ -1,0 +1,17 @@
+<uwsgi>
+    <chdir>%v</chdir>
+    <socket>127.0.0.1:8893</socket>
+    <pythonpath>%v</pythonpath>
+    <pythonpath>%v/../.venv/dj/lib/python3.6/site-packages</pythonpath>
+    <pidfile>%d%n.pid</pidfile>
+    <stats>%d%n.status</stats>
+    <env>DJANGO_SETTINGS_MODULE=%n.settings</env>
+    <module>%n.wsgi:application</module>
+    <master/>
+    <vacuum/>
+    <memory-report/>
+    <harakiri>20</harakiri>
+    <processes>4</processes>
+    <max-request>2000</max-request>
+    <py-autoreload>1</py-autoreload>
+</uwsgi>
